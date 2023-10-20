@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+.element
+{
+    padding-top: 8px;
+}
+.search{
+    grid-area: search;
+    margin-right: 20px; 
+}
+.searchbutton{
+    justify-content: space-between;
+    height: 42px;
+    background-color: #00AAFF;
+    color: white;
+    border: none;
+}
+.searchbutton:hover{
+    background-color: #76cefa;
+}
+form
+{
+    margin-top: 15px;
+}
+.Insert
+{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+.Insert a
+{
+    width: 200px;
+    height: 45px;
+    padding-top: 10px;
+}
+.Apj
+{
+    display: inline-block;
+    width: 60%;
+    padding-bottom:10px ;
+}
+.valider
+{
+    width: 150px;
+    margin-left: 10px;
+    padding: 8px auto;
+}
+/* les paneaux qui affiche les infromation de docteur */
+#Info_Doc
+{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    Text-align:left;
+    font-weight: bold;
+}
+#Info_Doc td:first-child
+{
+    width:250px; 
+    padding-left:50px;
+}
+/* Fin */
+.Doc
+{
+    margin-top: 10px;
+}
+.nb
+{
+    display: inline-block;
+    width: 100px;
+    padding-bottom:10px ;
+}
+label
+{
+    font-weight: 500;
+}
+table
+{
+    width: 100%;
+    margin: 10px auto;
+}
+.grid th{
+    text-align: center;
+    background-color: #3A3A3A;
+    color: white;
+    padding: 8px 20px;
+    box-shadow: 4px 4px 4px 4px;
+}
+.grid td{
+    border-bottom: solid 1px #808080;
+    padding: 3px;
+    text-align: center;
+}
+.grid tr:nth-last-of-type(even){
+    background-color: #C0C0C0;
+}
+#edite,.AjtSout {
+    color: #fff;
+    background-color: #15fa8f;
+    border-color: #00e479;
+    width: 80px;
+    height: 34px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+.Print {
+    color: #fff;
+    width: 80px;
+    height: 34px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+#edite:hover,.AjtSout:hover{
+    background-color: #6cffba;
+}
+#delete {
+    color: #fff;
+    background-color: #f83d50;
+    border-color: #f83d50;
+    width: 80px;
+    height: 34px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+#delete:hover{
+    background-color: #ff7684;
+}
+.txtrch
+{
+    display: inline-block;
+    width: 280px;
+    padding-bottom: 10px;
+}
+.Mod
+{
+    width: 80px;
+    height: 34px;
+    padding: 3px;
+    margin-bottom: 5px;    
+}
+input[type="checkBox"]
+{
+    width: 20px;
+    height: 20px;
+}
+.Jury
+{
+    width: 150px;
+    display: inline-block;
+}
+.Ajt
+{
+    font-weight: 700;
+    color: #fff;
+}
+.ModalJurys th
+{
+    font-weight: bold;
+    padding: 5px;
+}
+.ModalJurys td
+{
+    font-size: 12px;
+}
+
+
+span{ font-size: medium; font-weight: bold; }
+.content2{
+    /* background-color: rgb(228, 243, 255); */
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    border: 2px solid black;
+    grid-template-areas: 
+        "idsout     code        cinj        date"
+        "titre      grad        statut      etabliss";
+    width: 98%;
+    margin: auto;
+    height: 100px;
+    margin-bottom: 5px;
+}
+.idsout{ grid-area: idsout; padding: 5px;}.code{ grid-area: code;padding: 5px;  }
+.cinj{ grid-area: cinj;padding: 5px; }.date{ grid-area: date; padding: 5px;  }
+.titre{ grid-area: titre; padding: 5px;  }.grad{ grid-area: grad; padding: 5px;  }
+.statut{ grid-area: statut; padding: 5px;  }.etabliss{ grid-area: etabliss; padding: 5px;  }
+.moredetails{
+    justify-content: space-between;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 47px;
+    border-radius: 5px;
+    background-color: #00AAFF;
+    color: white;
+    border: none;
+}
+.justify-content-center
+{
+    overflow-x: auto;
+}
+@media screen and (max-width:1150px) {
+    .Insert a
+    {
+        margin-right: 50px !important;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:780px) {
+    .txtrch
+    {
+        width: 200px;
+    }
+    .search
+    {
+        text-align: center;
+    }
+    .Titre_TravailGrid,.Actions
+    {
+        width: auto !important;
+    }
+    .grid
+    {
+        width: 95%;
+        margin-left: 20px !important;
+    }
+    .grid td
+    {
+        display: block;
+        text-align: right;
+        padding-right:10px ;
+        padding-left:10px ;
+    }
+    .grid th
+    {
+        display: none;
+    }
+    .grid tr
+    {
+        margin-bottom: 10px;
+    }
+    .column
+    {
+        display: none !important;
+    }
+    .grid td::before
+    {
+        content: attr(data-label);
+        font-weight: 900;
+        float: left;
+    }
+}
+@media screen and (max-width:633px) {
+    .searchbutton
+    {
+        margin-top: 10px;
+        width: 200px;
+    }
+}
+@media screen and (max-width:600px) {
+    body
+    {
+        width: 600px;
+    }
+    .modal-dialog
+    {
+        margin-left: 0px !important;
+    }
+    .modal-content
+    {
+        width: 600px !important;
+    }
+    .modal
+    {
+        overflow-x: scroll !important;
+        margin-left: 0 !important;
+    }
+}

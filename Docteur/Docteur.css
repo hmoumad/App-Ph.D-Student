@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    background-color: wheat;
+}
+.logo{
+    float: left;
+    color: #f8f7f4;
+}
+.navbar{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    background-color: #504A4B;
+    /* color: black; */
+    padding: 0px 100px;    
+}
+.navbar ul {
+    text-align: right;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    margin-right: 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.navbar ul li a:hover{
+    background-color: #A9A9A9;
+    color: white;
+    padding: 20px;
+    border-radius: 3px;
+    width: 20px;
+}
+.SearchApogee{
+    float: right;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+.SearchApogee input{
+    width: 200px;
+    height: 45px;
+    border-radius: 5px;
+    border-color: 2px #aaa;
+    padding: 10px;
+    font-weight: 2px ;
+    font-size: medium;
+}
+.SearchApogee input:focus{
+    border-color:dodgerblue;
+    box-shadow: 0 0 10px 0 dodgerblue;
+}
+.SearchApogee button{
+    width: 100px;
+    height: 45px;
+    border-radius: 5px;
+    /* font-weigh\t: bold; */
+    font-size: large;
+    color: white;
+    border: none;
+    background-color: #00AAFF;
+}
+.SearchApogee button:hover{
+    background-color: #5dc6fa;
+}
+.CRUD{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.CRUD button,.CRUD a
+{
+    margin-top: 10px;
+    margin-right: 90px !important;
+}
+.ImportExel button{
+    justify-content: space-between;
+    width: 170px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #00AAFF;
+    color: white;
+    border: none;
+}
+.CRUD button,.CRUD a{
+    width: 180px;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.CRUD a
+{
+    padding-top: 10px;
+}
+
+.CRUD button:hover{
+    background-color: rgb(61, 61, 232);;
+}
+.grid{
+    text-align: center;
+    width: 1250px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 35px;
+    margin-right: 15px;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 4px 4px 4px 4px;
+}
+.grid th{
+    text-align: center;
+    background-color: #3A3A3A;
+    color: white;
+    padding: 8px;
+    box-shadow: 4px 4px 4px 4px;
+}
+.grid td{
+    border-bottom: solid 1px #808080;
+    padding: 3px;
+    text-align: center;
+}
+.grid tr:nth-last-of-type(even){
+    background-color: #C0C0C0;
+}
+.grid tr:last-of-type{
+    border-bottom: solid 3px #00AAFF;
+}
+.modal{
+    background-color: white;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.justify-content-center
+{
+    overflow-x: auto;
+}
+/* ********** Grid *********** */
+@media screen and (max-width:1250px){
+    .grid
+    {
+        width: 1050px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .column
+    {
+        display: none;
+    }
+    .grid
+    {
+        width: 940px;
+        margin: 15px !important;
+    }
+}
+@media screen and (max-width:1000px) {
+    .CRUD button,.CRUD a
+    {
+        margin-right: 40px !important;
+    }
+    .SearchApogee
+    {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .grid
+    {
+        width: 100%;
+        margin-left: 20px !important;
+    }
+    .grid td
+    {
+        display: block;
+        text-align: right;
+    }
+    .grid th
+    {
+        display: none;
+    }
+    .grid tr
+    {
+        margin-bottom: 10px;
+    }
+    .column
+    {
+        display: none !important;
+    }
+    .grid td::before
+    {
+        content: attr(data-label);
+        font-weight: 900;
+        float: left;
+    }
+}
+@media screen and (max-width:600px) {
+    .grid
+    {
+        width: 90%;
+        margin-left: 20px !important;
+    }
+}
+/* ******** Modal ********* */
+@media screen and (max-width:800px) {
+    .modal-content
+    {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:580px) {
+    .bg-light
+    {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width:500px) {
+    body
+    {
+        width: 500px;
+    }
+    .show
+    {
+        overflow-x: scroll !important;
+    }
+    .modal-content
+    {
+        width: 500px !important;
+    }
+    .modal-dialog
+    {
+        width: 500px !important;
+        margin-left: 10px !important;
+        padding-left: 0 !important;
+    }
+}

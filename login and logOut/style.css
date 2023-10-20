@@ -1,0 +1,28 @@
+body{
+    background: #F3FFFF;
+}
+.container{
+    margin-top: 100px;
+
+}
+.container ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.container ul li{
+    margin-right: 200px;
+
+}
+h3{
+    margin-top: 10px;
+    color: dimgrey;
+}
+.fa{
+    color:dimgrey ;
+}
+.fa:hover{
+    color: dodgerblue;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
